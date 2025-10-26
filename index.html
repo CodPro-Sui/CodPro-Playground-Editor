@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodPro Playground html/css/js</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_browser" />
+</head>
+
+<body>
+  <div class="header-tools">
+    <div class="logo">CS</div>
+    <div class="btns">
+      <div class="autoRun"><label for="auto">Auto-Run</label><input type="checkbox" name="auto" id="auto" /></div>
+      <button type="submit" class="run">Run</button>
+    </div>
+  </div>
+  <div class="editor-container">
+    <!-- html editor-->
+    <div class="editor html-editor">
+      
+    </div>
+    <!-- css editor -->
+    <div class="editor css-editor">
+      
+    </div>
+    <!-- js editor -->
+    <div class="editor js-editor">
+      
+    </div>
+    <!-- console viewer -->
+    <div class="editor console">
+      
+    </div>
+    <!-- output or screen -->
+    <iframe class="editor" id="output" sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms allow-top-navigation allow-popups-to-escape-sandbox allow-popups-to-escape-sandbox allow-pointer-lock"></iframe>
+  </div>
+  <button type="submit" class="open"><span class="material-symbols-outlined">
+  open_in_browser
+</span></button>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.44.0/min/vs/loader.js"></script>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>    
+</body>
+
+</html>

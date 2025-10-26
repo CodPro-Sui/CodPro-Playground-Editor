@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  zoom: normal;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background: #898989;
+}
+
+.logo{
+  font-size: 1.4em;
+  letter-spacing: .6px;
+  padding: 3px;
+  font-weight: bolder;
+  color: #15CD98;
+}
+.header-tools{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8px;
+  background: #10122B;
+  color: #ABACB0;
+}
+.btns,.autoRun{
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.btns *{
+  margin: auto 8px;
+}
+.btns button{
+  padding: 6px 16px;
+  background: #1BA65B;
+  color: #DAE2E9;
+  font-weight: 550;
+  border-radius: 9px;
+  outline: none;
+  letter-spacing: .3px;
+  font-size: 1.05em;
+  border: none;
+  transition: .3s all ease;
+}
+.btns button:hover,button:active{
+  transform: scale(.97);
+  background: #0F7E42;
+color: #C6D0D9;
+  transition: .3s all ease;
+
+}
+#auto{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 23px;
+  border-radius: 30px;
+  position: relative;
+  background: #E5D3A6;
+  transition: .3s all ease;
+}
+#auto::before{
+  position: absolute;
+  height: inherit;
+  aspect-ratio: 1/1;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  background: #765700;
+  content: "";
+  transition: .3s all ease;
+  box-shadow: 5px 0 6px #70727366;
+}
+
+#auto:checked{
+  background: #AD7D05;
+}
+#auto:checked::before{
+  transition: .3s all ease;
+  left: 22px;
+  background: #E1C377;
+  transform: rotate(180deg);
+}
+.autoRun label{
+  letter-spacing: .5px;
+}
+/* editor style */
+.editor-container{
+  display: grid;
+  width: 100%;
+  height: 150vh;
+  grid-template-rows: repeat(4,minmax(150px,240px)) 1fr;
+  gap: 5px;
+}
+.editor{
+  width: 100%;
+  height: 100%;
+}
+#output{
+  outline: none;
+  border: none;
+  background: white;
+}
+.console{
+  background: #080915
+}
+.error{
+padding: 5px;
+color: #CC132B;
+}
+.log {
+  padding: 5px;
+  color: #318BDC;
+}
+.warn {
+  padding: 5px;
+  color: #CC8813;
+}
+.info {
+  padding: 5px;
+  color: #CC1375;
+}
+@media (min-width: 770px) {
+  .editor-container{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  #output{
+    grid-column: span 2;
+  }
+}
+.open{
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  padding: 5px;
+  letter-spacing: .5px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background: #1769BF;
+  color: #ECF5FF;
+  z-index: 2000;
+}
