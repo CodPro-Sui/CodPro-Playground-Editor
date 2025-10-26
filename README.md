@@ -85,3 +85,13 @@ run.addEventListener("click", execute);
 ```javascript
   <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.44.0/min/vs/loader.js"></script>
 ```
+
+### Screenshot of editor with responsive
+![Screenshot](Screenshot_2025-10-26-18-39-01-15_f9a7afa717ced9e1fc9be9833291031a.jpg)
+
+### console result features with modern stylish 
+![Screenshot](Screenshot_2025-10-26-18-53-27-41_f9a7afa717ced9e1fc9be9833291031a.jpg)
+
+### Open result in new tab in google Chrome 
+![Screenshot](Screenshot_2025-10-26-18-55-06-95_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
+
